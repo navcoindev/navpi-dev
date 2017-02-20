@@ -1,0 +1,3 @@
+<?php
+$lockState='Not Encrypted';
+?>
