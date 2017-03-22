@@ -22,6 +22,10 @@ $bal1 = $coin->getbalance();
                     <td><input class="form-control" type="text" name="comment" value="<?php print($comment); ?>"></td>
                 </tr>
                 <tr>
+                    <td><b>Private payment</b></td>
+                    <td><input class="form-control" type="checkbox" name="anonsend" value="1" /></td>
+                </tr>
+                <tr>
                     <td>&nbsp;</td>
                     <td><button class='btn btn-blue' type="submit" value="Preview"><b>Preview</b></button></td>
         </form>
