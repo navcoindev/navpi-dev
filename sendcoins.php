@@ -10,23 +10,23 @@ $bal1 = $coin->getbalance();
         <form action="sendtoaddress.php" method="POST"><input type="hidden">
             <input type="hidden" name="a">
                 <tr>
-                    <td><b>To Address</b></td>
+                    <td class="table-row-label"><b>To Address</b></td>
                     <td><input class="form-control" type="text" name="address" value="<?php print($address); ?>"></td>
                 </tr>
                 <tr>
-                    <td><b>Amount</b></td>
+                    <td class="table-row-label"><b>Amount</b></td>
                     <td><input class="form-control" type="text" name="amount" value="<?php print($amount); ?>"></td>
                 </tr>
                 <tr>
-                    <td><b>Comment</b></td>
+                    <td class="table-row-label"><b>Comment</b></td>
                     <td><input class="form-control" type="text" name="comment" value="<?php print($comment); ?>"></td>
                 </tr>
                 <tr>
-                    <td><b>Private payment</b></td>
+                    <td class="table-row-label"><b>Private payment</b></td>
                     <td><input class="form-control" type="checkbox" name="anonsend" value="1" /></td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="table-row-label">&nbsp;</td>
                     <td><button class='btn btn-blue' type="submit" value="Preview"><b>Preview</b></button></td>
                 </tr>
         </form>
