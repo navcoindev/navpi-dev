@@ -28,6 +28,7 @@ $bal1 = $coin->getbalance();
                 <tr>
                     <td>&nbsp;</td>
                     <td><button class='btn btn-blue' type="submit" value="Preview"><b>Preview</b></button></td>
+                </tr>
         </form>
     </table>
 </div>
