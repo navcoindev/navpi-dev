@@ -26,8 +26,14 @@ $bal1 = $coin->getbalance();
                     <td><input class="form-control" type="checkbox" name="anonsend" value="1" /></td>
                 </tr>
                 <tr>
+<<<<<<< HEAD
                     <td>&nbsp;</td>
                     <td><button class='btn btn-blue' type="submit" value="Preview"><b>Preview</b></button></td>
+=======
+                    <td class="table-row-label">&nbsp;</td>
+                    <td><button class='btn btn-blue' type="submit" value="Preview"><b>Preview</b></button></td>
+                </tr>
+>>>>>>> c9aef8ddc2a96891f4a13ed702e52b35d46a7c55
         </form>
     </table>
 </div>

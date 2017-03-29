@@ -33,8 +33,13 @@ if ($status == "reboot"){
     $newLockState = "Locked";
     changeLockState();
   }
+<<<<<<< HEAD
     exec("python /home/stakebox/UI/libs/reboot.py");
     print '<h2>Your StakeBox is restarting ...</h2>';
+=======
+  exec("python /home/stakebox/UI/libs/reboot.py");
+  print '<h2>Your StakeBox is restarting ...</h2>';
+>>>>>>> c9aef8ddc2a96891f4a13ed702e52b35d46a7c55
 } else if ($status == "shutdown"){
   exec("python /home/stakebox/UI/libs/shutdown.py");
   print '<h2>Your StakeBox is shutting down ...</h2>';

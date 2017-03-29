@@ -6,9 +6,17 @@ $showlogin = true ;
 
 if (isset($_COOKIE['logincheck'])) 
 {
+<<<<<<< HEAD
 
 	if (md5($encryptedpasswd) == $_COOKIE['logincheck'])
 	{
+=======
+	//echo 'cookies is set <BR />' ;
+
+	if (md5($encryptedpasswd) == $_COOKIE['logincheck'])
+	{
+	// echo 'cookies is also correct' ;
+>>>>>>> c9aef8ddc2a96891f4a13ed702e52b35d46a7c55
 	$showlogin = false ;
 	}
 }

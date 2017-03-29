@@ -7,8 +7,20 @@ include ("pass.php");
       <div style="padding: 5px 30px 5px;">
          <div class="row">
             <a href="getinfo" class='btn btn-default' role='button'>Get Server Info</a>
+<<<<<<< HEAD
             <a href="getstakereport" class='btn btn-default' role='button'>Get Stake Report</a>
             <a href="getstakinginfo" class='btn btn-default' role='button'>Get Staking Info</a>
+=======
+<?php if($currentWallet == PayCoin || $currentWallet == Sprouts):?>
+            <a href="listminting" class='btn btn-default' role='button'>Get Staking Info</a>
+<?php elseif($currentWallet == BottleCaps || $currentWallet == CASH || $currentWallet == EmerCoin || $currentWallet == Diamond || $currentWallet == DigiCube || $currentWallet == HoboNickels || $currentWallet == HYPER || $currentWallet == HyperStake || $currentWallet == Influx || $currentWallet == NovaCoin || $currentWallet == PhilosopherStone || $currentWallet == TekCoin):?>
+            <a href="getmininginfo" class='btn btn-default' role='button'>Get Staking Info</a>
+<?php elseif($currentWallet == TruckCoin):?>
+            <a href="getstakereport" class='btn btn-default' role='button'>Get Staking Info</a>
+<?php else:?>
+            <a href="getstakinginfo" class='btn btn-default' role='button'>Get Staking Info</a>
+<?php endif;?>
+>>>>>>> c9aef8ddc2a96891f4a13ed702e52b35d46a7c55
             <a href="getpeerinfo" class='btn btn-default' role='button'>Get Peer Info</a>
             <a href="getconnectioncount" class='btn btn-default' role='button'>Get Connection Count</a>
             <a href="power" class='btn btn-default' role='button'>Power</a>

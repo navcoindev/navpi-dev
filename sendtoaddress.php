@@ -29,7 +29,10 @@ $bal1 = $coin->getbalance();
                 <tr>
                     <td>&nbsp;</td>
                     <td><button class='btn btn-blue' type="submit" value="Preview"><b>Send Coins</b></button></td>
+<<<<<<< HEAD
 		</tr>
+=======
+>>>>>>> c9aef8ddc2a96891f4a13ed702e52b35d46a7c55
         </form>
     </table>
 </div>
