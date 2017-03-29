@@ -148,3 +148,12 @@ a:focus {
   background-color: #71c7f0;
   border-color: #43b5eb;
 }
+
+.table-row-label {
+  line-height: 40px;
+}
+
+.table-row-label b {
+  margin-left: 10px;
+  line-height: 38px;
+}
