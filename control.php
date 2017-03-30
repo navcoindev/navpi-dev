@@ -36,6 +36,31 @@ include ("pass.php");
 </div><!-- /.well -->
 
 <div class="well">
+   <b><a name="navtech">Navtech</a></b>
+      <div style="padding: 5px 15px 5px;">
+         <div class="row">
+            <div class="col-lg-2">
+               <form action="listanonservers" method="POST"><input type="hidden">
+                  <div class="input-group">
+                     <button class='btn btn-default' type="submit" value="listanonservers">Manage NAVTech Servers</button>
+                  </div><!-- /input-group -->
+               </form>
+            </div><!-- /.col-lg-2 -->
+	    <div class="col-lg-8">
+               <form action="addanonserver" method="POST"><input type="hidden">
+                  <div class="input-group">
+                     <span class="input-group-btn">
+                        <button class='btn btn-default' type="submit" value="addanonserver">Add NAVTech Server</button>
+                     </span>
+                        <input class="form-control" type="text" name="server" placeholder="Enter Server (address:port)" >
+                  </div><!-- /input-group -->
+               </form>
+            </div><!-- /.col-lg-8 -->
+          </div>
+        </div>
+      </div>
+
+<div class="well">
    <b><a name="accounts&addresses">Accounts & Addresses</a></b>
       <div style="padding: 5px 15px 5px;">
          <div class="row">
