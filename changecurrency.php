@@ -189,9 +189,8 @@ else if($_GET['newCurrency'] == "krw"){
    $newSymbol = "₩";
    changecurrency();
 }
-else
-{
-   print_r("Wrong currency");
+else if($_GET['newCurrency']){
+   print_r("Invalid currency");
 }
 ?>
 </div>
