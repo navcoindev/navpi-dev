@@ -11,8 +11,8 @@ function changecurrency(){
 
 	$currencylocation = "/home/stakebox/UI/currency.php" ;
 
-	if (is_readable($currencylocation) == FALSE) 
-		die ("The currency file must be writable.") ; 
+	if (is_readable($currencylocation) == FALSE)
+		die ("The currency file must be writable.") ;
 
 	// Open the file and erase the contents if any
 	$fp = fopen($currencylocation, "w");
@@ -24,12 +24,12 @@ function changecurrency(){
   	// Close the file
   	fclose($fp);
 
-  	echo '<h4><a><p><b>Your currency has been changed.</p></b></a></h4>' ;
+  	echo '<h4><p><b>Your currency has been changed.</p></b></h4>' ;
 }
 
 ?>
 
-   <b><a name="transactions">Select New Currency</a></b>
+   <b><a name="transactions" style="margin-bottom: 10px">Select New Currency</a></b>
 	 <div class="row">
            <div class="col-lg-3" offset="4">
             <div class="dropdown">
@@ -61,7 +61,7 @@ function changecurrency(){
 	    </div>
          </div>
       </div>
-      
+
 <?php
 if($_GET['newCurrency'] == "usd"){
    $newCurrency = "usd";
