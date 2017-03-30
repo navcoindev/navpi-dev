@@ -58,6 +58,9 @@ if ($currentWallet == NavCoin){
 				<button class='btn btn-default' type="submit" name="show" value="show">Show private key</button>
 			</form>
 		<h4>wallet must be unlocked for sending, or not encrypted.</h4></center>
+		<?php
+		}
+		?>
 	</div>
 	<div class="col-lg-3">
 		<center><img class="emrQRCode" src="<?=$imgData?>"height="30%" />
