@@ -16,6 +16,7 @@ else{
 
 if ($currentWallet == NavCoin){
 	$stakinginfo = $coin->getstakinginfo();
+	$stakereport = $coin->getstakereport();
 	$x = array_reverse($stakinginfo);
 	$time = $x['expectedtime'];
 }
@@ -74,8 +75,7 @@ if ($currentWallet == NavCoin){
 	<p> Your main wallet address is <?php print_r($address); ?>.
 	<p>The network is currently on block <?php print_r($coin->getblockcount()); ?>.
 	<?php if ($currentWallet == NavCoin): ?>
-		<?php echo "<p>Your stake weight is {$w['combined']}{$sw['combined']}{$x['weight']}{$x['Weight']}.</p>" ?>
-		<?php echo "<p>The network stake weight is {$x['netstakeweight']}{$x['Net Stake Weight']}.</p>" ?>
+		<?php echo "<p><b>Stake report</b></p><p>Last 24h: {$stakereport['Last 24H']} NAV</p><p>Last 7d: {$stakereport['Last 7 Days']} NAV</p><p>Last 30d: {$stakereport['Last 30 Days']} NAV</p><p>Last 365d: {$stakereport['Last 365 Days']} NAV</p>" ?>
 	<?php endif; ?>
 	<?php if ($currentWallet == Philosopherstone): ?>
 		<?php echo "<p>Your stake weight is {$x['stakeweight']}.</p>"?>

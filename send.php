@@ -17,14 +17,14 @@ if(isset($_POST['address']) && isset($_POST['amount']) && isset($_POST['account'
 
 if(isset($_POST['address']) && isset($_POST['amount']) && !isset($_POST['account'])) {
     try {
-	if($_POST['anon'] == "1"){
+	if($_POST['anonsend'] == "1"){
 		$coin->anonsend($address, (float)$amount, $comment);
 	} else {
 		$coin->sendtoaddress($address, (float)$amount, $comment);
 	}
 	echo "<p class='bg-success'><b>You have sent {$amount} coin(s) to {$address} <br> </b></p>";
     } catch(Exception $e) {
-	echo "<p class='bg-danger'><b>Error: Something went wrong... Have you got enough to send that amount of money? Is your wallet unlocked? </b></p>";
+	echo "<p class='bg-danger'><b>Error: Something went wrong... Have you got enough to send that amount of money? Is your wallet unlocked? {$e} </b></p>";
     }   
 }
 ?>

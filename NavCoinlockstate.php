@@ -1,3 +1,3 @@
 <?php
-$lockState='Not Encrypted';
+$lockState='Unlocked For Staking';
 ?>

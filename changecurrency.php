@@ -1,20 +1,22 @@
 <?php
 include 'header.php';
 include 'pass.php';
-$currencylocation = "/home/stakebox/UI/currency.php" ;
 
 function changecurrency(){
 
-	global $currencylocation ;
+
 	global $newCurrency ;
 	global $newLongCurrency ;
 	global $newSymbol ;
 
-	if (is_readable($currencylocation) == FALSE)
-		die ("The currency file must be writable.") ;
+	$currencylocation = "/home/stakebox/UI/currency.php" ;
+
+	if (is_readable($currencylocation) == FALSE) 
+		die ("The currency file must be writable.") ; 
 
 	// Open the file and erase the contents if any
 	$fp = fopen($currencylocation, "w");
+
 
 	// Write the data to the file
 	// CODE INJECTION WARNING!
@@ -22,7 +24,7 @@ function changecurrency(){
   	// Close the file
   	fclose($fp);
 
-  	echo '<h4 style="color: #333;"><p><b>Your currency has been changed.</p></b></h4>' ;
+  	echo '<h4><a><p><b>Your currency has been changed.</p></b></a></h4>' ;
 }
 
 ?>
@@ -59,7 +61,7 @@ function changecurrency(){
 	    </div>
          </div>
       </div>
-
+      
 <?php
 if($_GET['newCurrency'] == "usd"){
    $newCurrency = "usd";
@@ -186,6 +188,10 @@ else if($_GET['newCurrency'] == "krw"){
    $newLongCurrency = "South Korean Won";
    $newSymbol = "₩";
    changecurrency();
+}
+else
+{
+   print_r("Wrong currency");
 }
 ?>
 </div>

@@ -6,7 +6,7 @@
 	require("libs/config.php");
 	require("jsonRPCClient.php");
 	require("printarray.php");
-#	require("/home/stakebox/UI/currency.php");
+	require("/home/stakebox/UI/currency.php");
 #	include("/home/stakebox/UI/email.php");
 	include("diskusage.php");
 
