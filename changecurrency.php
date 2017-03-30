@@ -29,7 +29,7 @@ function changecurrency(){
 
 ?>
 
-   <b><a name="transactions" style="margin-bottom: 10px">Select New Currency</a></b>
+   <b><a name="transactions" style="margin-bottom: 10px; display: inline-block;">Select New Currency</a></b>
 	 <div class="row">
            <div class="col-lg-3" offset="4">
             <div class="dropdown">
