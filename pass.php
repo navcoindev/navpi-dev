@@ -2,21 +2,12 @@
 include ('verify.php');
 $encryptedpasswd= getpass() ;
 $showlogin = true ;
-// check cookie 
+// check cookie
 
-if (isset($_COOKIE['logincheck'])) 
+if (isset($_COOKIE['logincheck']))
 {
-<<<<<<< HEAD
-
 	if (md5($encryptedpasswd) == $_COOKIE['logincheck'])
 	{
-=======
-	//echo 'cookies is set <BR />' ;
-
-	if (md5($encryptedpasswd) == $_COOKIE['logincheck'])
-	{
-	// echo 'cookies is also correct' ;
->>>>>>> c9aef8ddc2a96891f4a13ed702e52b35d46a7c55
 	$showlogin = false ;
 	}
 }
@@ -24,8 +15,8 @@ if (isset($_COOKIE['logincheck']))
 <?php
 if (isset($_POST['pass']) )
 {
-	if (verifyPassword($_POST['pass'])!='right') 
-	{ 
+	if (verifyPassword($_POST['pass'])!='right')
+	{
 	echo ('<center><font color="red">Password incorrect. </font></center>');
 	}
 	else
@@ -47,7 +38,7 @@ if ($showlogin) {
          <span class="input-group-btn">
 	    <button class='btn btn-default' type="submit" value="Submit">Submit</button>
          </span>
-	    <input class="form-control" type="password" name="pass" value ="" placeholder="Enter your password to continue" maxlength="60" size="30"> 
+	    <input class="form-control" type="password" name="pass" value ="" placeholder="Enter your password to continue" maxlength="60" size="30">
       </div><!-- /input-group -->
    </form>
 </div><!-- /.col-lg-6 -->
