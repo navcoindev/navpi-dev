@@ -10,19 +10,19 @@ function changecurrency(){
 	global $newLongCurrency ;
 	global $newSymbol ;
 
-	if (is_readable($currencylocation) == FALSE) 
-		die ("The currency file must be writable.") ; 
+	if (is_readable($currencylocation) == FALSE)
+		die ("The currency file must be writable.") ;
 
 	// Open the file and erase the contents if any
 	$fp = fopen($currencylocation, "w");
 
 	// Write the data to the file
 	// CODE INJECTION WARNING!
-  	fwrite($fp, "<?php\n\$currency='$newCurrency';\n\$longCurrency='$newLongCurrency';\n\$symbol='$newSymbol';\n?>");	  	
+  	fwrite($fp, "<?php\n\$currency='$newCurrency';\n\$longCurrency='$newLongCurrency';\n\$symbol='$newSymbol';\n?>");
   	// Close the file
   	fclose($fp);
 
-  	echo '<h4><a><p><b>Your currency has been changed.</p></b></a></h4>' ;
+  	echo '<h4 style="color: #333;"><a><p><b>Your currency has been changed.</p></b></a></h4>' ;
 }
 
 ?>
@@ -59,7 +59,7 @@ function changecurrency(){
 	    </div>
          </div>
       </div>
-      
+
 <?php
 if($_GET['newCurrency'] == "usd"){
    $newCurrency = "usd";
