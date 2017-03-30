@@ -22,7 +22,7 @@ function changecurrency(){
   	// Close the file
   	fclose($fp);
 
-  	echo '<h4 style="color: #333;"><a><p><b>Your currency has been changed.</p></b></a></h4>' ;
+  	echo '<h4 style="color: #333;"><p><b>Your currency has been changed.</p></b></h4>' ;
 }
 
 ?>
